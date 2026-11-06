@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบแปลภาษา ไทย - อังกฤษ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result-box {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-radius: 4px;
+            min-height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>แปลภาษาไทยเป็นอังกฤษ (Xiaofan API)</h2>
+
+    <label for="inputText">กรอกข้อความภาษาไทย (ไม่เกิน 1,000 ตัวอักษร):</label>
+    <textarea id="inputText" placeholder="พิมพ์ข้อความที่ต้องการแปลที่นี่..."></textarea>
+    
+    <button id="translateBtn">แปลภาษา</button>
+
+    <h3>ผลลัพธ์การแปล:</h3>
+    <div id="resultBox" class="result-box">ข้อความที่แปลแล้วจะแสดงที่นี่...</div>
+
+    <!-- ดึงไฟล์ JavaScript มาทำงาน -->
+    <script src="script.js"></script>
+</body>
+</html>
